@@ -17,4 +17,18 @@ public class LineComparision {
 
     }
 
+    public void checkLineComparision(Double lengthOne, Double lengthTwo)
+    {
+        int lineCompare = (int)lengthOne.compareTo(lengthTwo);
+        if ( lineCompare < 0 ){
+            System.out.println("Line 1 length is less than line 2");
+        }
+        else if ( lineCompare > 0 ){
+            System.out.println("Line 1 length is grater than line 2");
+        }
+        else {
+            System.out.println("Line 1 length is Equal to line 2");
+        }
+    }
+
 }
